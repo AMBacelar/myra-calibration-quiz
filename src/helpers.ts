@@ -46,34 +46,25 @@ export type Question = {
   options: Options[];
 };
 
-const validateAccordingToScore = (
-  score: ScoreModifierValues,
-  question: Question
-): boolean => {
-  const isOverMinimum = true;
-  const isBelowMaximum = true;
-  console.log(
-    "one day, I'll have this function actually do what it's supposed to, but for now, it's always true"
-  );
-  return isOverMinimum && isBelowMaximum;
-};
-
 export const getNextQuestion = (
-  currentScore: ScoreModifierValues,
-  pastQuestions: number[],
+  _currentScore: ScoreModifierValues,
+  pastQuestionIndex: number,
   questions: Question[]
-): { nextQuestion: Question; pastQuestions: number[] } => {
-  // TODO: Figure out a way to take into consideration how many questions for each category has been asked and how to even them out
-  let newPool = questions.filter((_, i) => pastQuestions.indexOf(i) === -1);
-  newPool = newPool.filter((question) =>
-    validateAccordingToScore(currentScore, question)
-  );
-  const nextQuestionIndex = Math.floor(Math.random() * newPool.length);
-  return {
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    nextQuestion: newPool[nextQuestionIndex]!,
-    pastQuestions: [...pastQuestions, nextQuestionIndex].sort(),
-  };
+):
+  | false
+  | {
+      nextQuestion: Question;
+      nextQuestionIndex: number;
+    } => {
+  const nextQuestion = questions[pastQuestionIndex + 1];
+  if (nextQuestion !== undefined && nextQuestion !== null) {
+    return {
+      nextQuestion,
+      nextQuestionIndex: pastQuestionIndex + 1,
+    };
+  } else {
+    return false;
+  }
 };
 
 export const updateScore = (

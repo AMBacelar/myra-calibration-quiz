@@ -12,27 +12,35 @@ import { questions } from "~/questions";
 
 const QuestionSection = () => {
   const [score, setScore] = useState<ActiveScore>(initialScore);
-  const [pastQuestions, setPastQuestions] = useState<number[]>([]);
+  const [questionIndex, setQuestionIndex] = useState<number>(-1);
   const [question, setQuestion] = useState<Question>();
   const calledOnce = useRef(false);
   useEffect(() => {
     if (calledOnce.current) {
       return;
     }
-    const firstQuestionPayload = getNextQuestion(initialScore, [], questions);
-    setQuestion(firstQuestionPayload.nextQuestion);
-    setPastQuestions(firstQuestionPayload.pastQuestions);
-    calledOnce.current = true;
+    const firstQuestionPayload = getNextQuestion(initialScore, -1, questions);
+    if (!firstQuestionPayload) {
+      console.log("should never happen");
+    } else {
+      setQuestion(firstQuestionPayload.nextQuestion);
+      setQuestionIndex(firstQuestionPayload.nextQuestionIndex);
+      calledOnce.current = true;
+    }
   }, []);
 
   const callGetNextQuestion = () => {
     const nextQuestionPayload = getNextQuestion(
       score,
-      pastQuestions,
+      questionIndex,
       questions
     );
-    setQuestion(nextQuestionPayload.nextQuestion);
-    setPastQuestions(nextQuestionPayload.pastQuestions);
+    if (!nextQuestionPayload) {
+      console.log("We have asked all the available questions");
+    } else {
+      setQuestion(nextQuestionPayload.nextQuestion);
+      setQuestionIndex(nextQuestionPayload.nextQuestionIndex);
+    }
   };
 
   return (
@@ -47,7 +55,6 @@ const QuestionSection = () => {
             index={i}
             text={option.text}
             onClick={() => {
-              console.log("yolo!", option.payload);
               setScore(updateScore(score, option.payload));
               callGetNextQuestion();
             }}
