@@ -10,7 +10,10 @@ import {
 } from "~/helpers";
 import { questions } from "~/questions";
 
-const QuestionSection = () => {
+const QuestionSection: FunctionComponent<{
+  questions: Question[];
+  onLastQuestionAnswered: () => void;
+}> = ({ questions, onLastQuestionAnswered }) => {
   const [score, setScore] = useState<ActiveScore>(initialScore);
   const [questionIndex, setQuestionIndex] = useState<number>(-1);
   const [question, setQuestion] = useState<Question>();
@@ -22,6 +25,7 @@ const QuestionSection = () => {
     const firstQuestionPayload = getNextQuestion(initialScore, -1, questions);
     if (!firstQuestionPayload) {
       console.log("should never happen");
+      onLastQuestionAnswered();
     } else {
       setQuestion(firstQuestionPayload.nextQuestion);
       setQuestionIndex(firstQuestionPayload.nextQuestionIndex);
@@ -37,6 +41,7 @@ const QuestionSection = () => {
     );
     if (!nextQuestionPayload) {
       console.log("We have asked all the available questions");
+      onLastQuestionAnswered();
     } else {
       setQuestion(nextQuestionPayload.nextQuestion);
       setQuestionIndex(nextQuestionPayload.nextQuestionIndex);
@@ -48,7 +53,7 @@ const QuestionSection = () => {
       <h2 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
         {question?.text}
       </h2>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
+      <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
         {question?.options.map((option, i) => (
           <Option
             key={i}
@@ -76,7 +81,7 @@ const Option: FunctionComponent<{
         e.preventDefault();
         onClick();
       }}
-      className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+      className="m-4 flex w-80 flex-col rounded-xl bg-white/10 p-6 text-white hover:bg-white/20"
     >
       <h3 className="text-2xl font-bold">Option {index + 1} →</h3>
       <div className="text-lg">{text}</div>
@@ -98,7 +103,10 @@ const Home: NextPage = () => {
             Myra <span className="text-[hsl(280,100%,70%)]">Empathy</span>{" "}
             Calibration
           </h1>
-          <QuestionSection />
+          <QuestionSection
+            questions={questions}
+            onLastQuestionAnswered={() => console.log("go to next section now")}
+          />
         </div>
       </main>
     </>
