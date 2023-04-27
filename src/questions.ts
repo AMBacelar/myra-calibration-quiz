@@ -66,4 +66,96 @@ const questionTemplate: Question = {
   ],
 };
 
+export type AlternativeQuestion = {
+  key: string;
+  text: string;
+  direction: string;
+  options: {
+    text: string;
+    key: string;
+  }[];
+};
+export const initialQuestions: AlternativeQuestion[] = [
+  {
+    key: "primary_goal",
+    text: "What's your Primary Goal?",
+    direction: "column",
+    options: [
+      { text: "Learn more about my culture", key: "learn_culture" },
+      { text: "Keep my brain sharp", key: "brain_sharpness" },
+      { text: "Discover new cultures", key: "new_culture" },
+      { text: "Improve my empathy skills", key: "improve_empathy" },
+    ],
+  },
+  {
+    key: "better_memory",
+    text: "Do you want to improve your memory to better recall important traditions and practices?",
+    direction: "row",
+    options: [
+      { text: "Yes", key: "yes" },
+      { text: "No", key: "no" },
+    ],
+  },
+  {
+    key: "improve_focus",
+    text: "Do you want to improve your ability to focus to better appreciate cultural nuances in art and literature?",
+    direction: "row",
+    options: [
+      { text: "Yes", key: "yes" },
+      { text: "No", key: "no" },
+    ],
+  },
+  {
+    key: "problem_solving",
+    text: "Do you want to improve your problem-solving abilities to better navigate cross-cultural dialogue?",
+    direction: "row",
+    options: [
+      { text: "Yes", key: "yes" },
+      { text: "No", key: "no" },
+    ],
+  },
+  {
+    key: "planning_organising",
+    text: "Would you like to improve your planning and organising skills to better engage in cultural experiences and events?",
+    direction: "row",
+    options: [
+      { text: "Yes", key: "yes" },
+      { text: "No", key: "no" },
+    ],
+  },
+  {
+    key: "improve_creativity",
+    text: "Do you want to improve your creativity to better appreciate and engage with diverse expressions and contribute to building a more inclusive society?",
+    direction: "row",
+    options: [
+      { text: "Yes", key: "yes" },
+      { text: "No", key: "no" },
+    ],
+  },
+];
+
+export const finalQuestions: AlternativeQuestion[] = [
+  {
+    key: "ethnicity",
+    text: "What is your Ethnicity?",
+    direction: "column",
+    options: [
+      { text: "Arab, Middle East or North African", key: "arab" },
+      { text: "Asian or Asian Pacific", key: "asian" },
+      { text: "Black, Caribbean or African", key: "black" },
+      { text: "Mixed or multiple ethnic groups", key: "mixed" },
+      { text: "White", key: "white" },
+    ],
+  },
+  {
+    key: "surname_origin",
+    text: "Do you know the origin of your surname?",
+    direction: "row",
+    options: [
+      { text: "Yes", key: "yes" },
+      { text: "No", key: "no" },
+    ],
+  },
+];
+
 export const questions = [questionTemplate];

@@ -46,14 +46,13 @@ export type Question = {
   options: Options[];
 };
 
-export const getNextQuestion = (
-  _currentScore: ScoreModifierValues,
+export const getNextQuestion = <T>(
   pastQuestionIndex: number,
-  questions: Question[]
+  questions: T[]
 ):
   | false
   | {
-      nextQuestion: Question;
+      nextQuestion: T;
       nextQuestionIndex: number;
     } => {
   const nextQuestion = questions[pastQuestionIndex + 1];
