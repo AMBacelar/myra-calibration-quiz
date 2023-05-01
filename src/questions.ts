@@ -217,7 +217,7 @@ export const questions: Question[] = [
   },
   {
     text: "Flag Question",
-    image: "/images/tempFlag.png",
+    image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.category1]: undefined,
