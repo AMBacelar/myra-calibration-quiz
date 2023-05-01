@@ -57,7 +57,7 @@ const Home: NextPage = () => {
                   <option value="US">United States</option>
 	<option value="UK">United Kingdom</option>
 	<option value="UE">United Arab Emirates</option>
-	<optgroup label="Other countries">
+	<optgroup label="Rest of countries">
 		<option value="DZ" >Algeria</option>
 		<option value="AD" >Andorra</option>
 		<option value="AO" >Angola</option>
