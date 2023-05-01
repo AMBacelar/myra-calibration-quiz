@@ -41,6 +41,7 @@ type Options = {
 export type Question = {
   text: string;
   image?: string;
+  direction: string;
   minimumScoresRequiredToDisplayQuestion: ScoreModifierValues;
   maximumScoresRequiredToDisplayQuestion: ScoreModifierValues;
   options: Options[];

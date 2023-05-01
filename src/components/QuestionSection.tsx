@@ -47,10 +47,14 @@ export const QuestionSection: FunctionComponent<{
 
   return (
     <>
-      <h2 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+      <h2 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
         {question?.text}
       </h2>
-      <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
+      <div
+        className={`flex${
+          question?.direction === "row" ? "" : "-col"
+        } gap-4 sm:grid-cols-2 md:gap-8`}
+      >
         {question?.options.map((option, i) => (
           <Option
             key={i}
@@ -77,7 +81,7 @@ const Option: FunctionComponent<{
         e.preventDefault();
         onClick();
       }}
-      className="m-4 flex w-80 flex-col rounded-xl bg-white/10 p-6 text-white hover:bg-white/20"
+      className="m-4 flex w-80 flex-col rounded-xl border border-black bg-white/10 p-6 hover:bg-white/20"
     >
       <h3 className="text-2xl font-bold">Option {index + 1} →</h3>
       <div className="text-lg">{text}</div>
