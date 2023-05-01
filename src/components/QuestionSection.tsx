@@ -48,7 +48,7 @@ export const QuestionSection: FunctionComponent<{
 
   return (
     <>
-      <h2 className="text-lg font-extrabold tracking-tight sm:text-[5rem]">
+      <h2 className="font-extrabold leading-none tracking-tight sm:text-[5rem]">
         {question?.text}
       </h2>
       {question?.image && (
