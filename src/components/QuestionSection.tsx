@@ -83,7 +83,7 @@ const Option: FunctionComponent<{
   index: number;
   text: string;
   onClick: () => void;
-}> = ({ index, text, onClick }) => {
+}> = ({ text, onClick }) => {
   return (
     <button
       onClick={(e) => {
@@ -92,7 +92,6 @@ const Option: FunctionComponent<{
       }}
       className="m-4 flex w-80 flex-col rounded-xl border border-black bg-white/10 p-6 hover:bg-white/20"
     >
-      <h3 className="text-2xl font-bold">Option {index + 1} →</h3>
       <div className="text-lg">{text}</div>
     </button>
   );
