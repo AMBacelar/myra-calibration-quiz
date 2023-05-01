@@ -159,9 +159,9 @@ export const finalQuestions: AlternativeQuestion[] = [
   },
 ];
 
-export const questions = [
+export const questions: Question[] = [
   {
-    text: "question text?",
+    text: "Question",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.category1]: undefined,
@@ -211,6 +211,162 @@ export const questions = [
           [Categories.category4]: 6,
           [Categories.category5]: undefined,
           [Categories.category6]: 9,
+        },
+      },
+    ],
+  },
+  {
+    text: "Flag Question",
+    image: "/images/tempFlag.png",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: 30,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: 80,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.category1]: undefined,
+          [Categories.category2]: 10,
+          [Categories.category3]: undefined,
+          [Categories.category4]: 14,
+          [Categories.category5]: undefined,
+          [Categories.category6]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.category1]: undefined,
+          [Categories.category2]: undefined,
+          [Categories.category3]: undefined,
+          [Categories.category4]: 7,
+          [Categories.category5]: undefined,
+          [Categories.category6]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.category1]: undefined,
+          [Categories.category2]: 2,
+          [Categories.category3]: undefined,
+          [Categories.category4]: 6,
+          [Categories.category5]: undefined,
+          [Categories.category6]: 9,
+        },
+      },
+    ],
+  },
+  {
+    text: "Who said?",
+    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: 30,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: 80,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.category1]: undefined,
+          [Categories.category2]: 10,
+          [Categories.category3]: undefined,
+          [Categories.category4]: 14,
+          [Categories.category5]: undefined,
+          [Categories.category6]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.category1]: undefined,
+          [Categories.category2]: undefined,
+          [Categories.category3]: undefined,
+          [Categories.category4]: 7,
+          [Categories.category5]: undefined,
+          [Categories.category6]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.category1]: undefined,
+          [Categories.category2]: 2,
+          [Categories.category3]: undefined,
+          [Categories.category4]: 6,
+          [Categories.category5]: undefined,
+          [Categories.category6]: 9,
+        },
+      },
+    ],
+  },
+  {
+    text: "Michael ________ was born 1958.",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: 30,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: 80,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.category1]: undefined,
+          [Categories.category2]: 10,
+          [Categories.category3]: undefined,
+          [Categories.category4]: 14,
+          [Categories.category5]: undefined,
+          [Categories.category6]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.category1]: undefined,
+          [Categories.category2]: undefined,
+          [Categories.category3]: undefined,
+          [Categories.category4]: 7,
+          [Categories.category5]: undefined,
+          [Categories.category6]: undefined,
         },
       },
     ],

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState, type FunctionComponent, useEffect, useRef } from "react";
 import {
   type Question,
@@ -47,9 +48,17 @@ export const QuestionSection: FunctionComponent<{
 
   return (
     <>
-      <h2 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
+      <h2 className="text-lg font-extrabold tracking-tight sm:text-[5rem]">
         {question?.text}
       </h2>
+      {question?.image && (
+        <Image
+          width={640}
+          height={360}
+          src={question.image}
+          alt={question.text}
+        />
+      )}
       <div
         className={`flex${
           question?.direction === "row" ? "" : "-col"

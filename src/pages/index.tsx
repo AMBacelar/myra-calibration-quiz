@@ -114,7 +114,7 @@ const Home: NextPage = () => {
                     setStage((stage) => stage + 1);
                   }}
                 >
-                  submit!
+                  Go!
                 </button>
               </div>
             </>

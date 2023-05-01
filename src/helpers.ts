@@ -40,6 +40,7 @@ type Options = {
 };
 export type Question = {
   text: string;
+  metaText?: string;
   image?: string;
   direction: string;
   minimumScoresRequiredToDisplayQuestion: ScoreModifierValues;
