@@ -46,12 +46,16 @@ export const QuestionSection: FunctionComponent<{
     callGetNextQuestion();
   }, [score]);
 
+  if (!question) {
+    return null;
+  }
+
   return (
     <>
       <h2 className="font-extrabold leading-none tracking-tight sm:text-[5rem]">
-        {question?.text}
+        {question.text}
       </h2>
-      {question?.image && (
+      {question.image && (
         <Image
           width={640}
           height={360}
@@ -61,36 +65,46 @@ export const QuestionSection: FunctionComponent<{
       )}
       <div
         className={`flex${
-          question?.direction === "row" ? "" : "-col"
+          question.direction === "row" ? "" : "-col"
         } gap-4 sm:grid-cols-2 md:gap-8`}
       >
-        {question?.options.map((option, i) => (
+        {question.options.map((option, i) => (
           <Option
             key={i}
-            index={i}
             text={option.text}
             onClick={() => {
               setScore(updateScore(score, option.payload));
             }}
           />
         ))}
+        {question.showNext && (
+          <Option
+            text={"I'm not sure"}
+            notSure
+            onClick={() => {
+              setScore(updateScore(score, question.showNextScore));
+            }}
+          />
+        )}
       </div>
     </>
   );
 };
 
 const Option: FunctionComponent<{
-  index: number;
   text: string;
+  notSure?: boolean;
   onClick: () => void;
-}> = ({ text, onClick }) => {
+}> = ({ text, notSure, onClick }) => {
   return (
     <button
       onClick={(e) => {
         e.preventDefault();
         onClick();
       }}
-      className="m-4 flex w-80 flex-col rounded-xl border border-black bg-white/10 p-6 hover:bg-white/20"
+      className={`m-4 flex w-80 flex-col items-center rounded-xl border ${
+        notSure ? "" : "border border-black"
+      } bg-white/10 p-6 hover:bg-white/20`}
     >
       <div className="text-lg">{text}</div>
     </button>

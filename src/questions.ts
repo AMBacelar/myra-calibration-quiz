@@ -1,4 +1,4 @@
-import { Categories, type Question } from "./helpers";
+import { Categories, ShowNextWrapper, type Question } from "./helpers";
 
 const questionTemplate: Question = {
   text: "question text?",
@@ -65,9 +65,10 @@ const questionTemplate: Question = {
       },
     },
   ],
+  showNext: false,
 };
 
-export type AlternativeQuestion = {
+export type AlternativeQuestion = ShowNextWrapper & {
   key: string;
   text: string;
   direction: string;
@@ -87,6 +88,15 @@ export const initialQuestions: AlternativeQuestion[] = [
       { text: "Discover new cultures", key: "new_culture" },
       { text: "Improve my empathy skills", key: "improve_empathy" },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     key: "better_memory",
@@ -96,6 +106,15 @@ export const initialQuestions: AlternativeQuestion[] = [
       { text: "Yes", key: "yes" },
       { text: "No", key: "no" },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     key: "improve_focus",
@@ -105,6 +124,15 @@ export const initialQuestions: AlternativeQuestion[] = [
       { text: "Yes", key: "yes" },
       { text: "No", key: "no" },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     key: "problem_solving",
@@ -114,6 +142,15 @@ export const initialQuestions: AlternativeQuestion[] = [
       { text: "Yes", key: "yes" },
       { text: "No", key: "no" },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     key: "planning_organising",
@@ -123,6 +160,15 @@ export const initialQuestions: AlternativeQuestion[] = [
       { text: "Yes", key: "yes" },
       { text: "No", key: "no" },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     key: "improve_creativity",
@@ -132,6 +178,15 @@ export const initialQuestions: AlternativeQuestion[] = [
       { text: "Yes", key: "yes" },
       { text: "No", key: "no" },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
 ];
 
@@ -147,6 +202,15 @@ export const finalQuestions: AlternativeQuestion[] = [
       { text: "Mixed or multiple ethnic groups", key: "mixed" },
       { text: "White", key: "white" },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     key: "surname_origin",
@@ -156,6 +220,15 @@ export const finalQuestions: AlternativeQuestion[] = [
       { text: "Yes", key: "yes" },
       { text: "No", key: "no" },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
 ];
 
@@ -214,6 +287,15 @@ export const questions: Question[] = [
         },
       },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     text: "Flag Question",
@@ -270,6 +352,15 @@ export const questions: Question[] = [
         },
       },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     text: "Who said?",
@@ -326,6 +417,15 @@ export const questions: Question[] = [
         },
       },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     text: "Michael ________ was born 1958.",
@@ -370,6 +470,15 @@ export const questions: Question[] = [
         },
       },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
   {
     text: "question 2 text?",
@@ -414,5 +523,14 @@ export const questions: Question[] = [
         },
       },
     ],
+    showNext: true,
+    showNextScore: {
+      [Categories.category1]: undefined,
+      [Categories.category2]: undefined,
+      [Categories.category3]: undefined,
+      [Categories.category4]: undefined,
+      [Categories.category5]: undefined,
+      [Categories.category6]: undefined,
+    },
   },
 ];

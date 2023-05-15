@@ -66,6 +66,18 @@ export const AlternativeQuestions: FunctionComponent<{
             }}
           />
         ))}
+        {question.showNext && (
+          <Option
+            text={"I'm not sure"}
+            notSure
+            onClick={() => {
+              setResult((result) => ({
+                ...result,
+                [question.key]: "not sure",
+              }));
+            }}
+          />
+        )}
       </div>
     </>
   );
@@ -73,15 +85,18 @@ export const AlternativeQuestions: FunctionComponent<{
 
 const Option: FunctionComponent<{
   text: string;
+  notSure?: boolean;
   onClick: () => void;
-}> = ({ text, onClick }) => {
+}> = ({ text, notSure, onClick }) => {
   return (
     <button
       onClick={(e) => {
         e.preventDefault();
         onClick();
       }}
-      className="m-4 flex w-80 flex-col rounded-xl border border-black bg-white/10 p-6 hover:bg-white/20"
+      className={`m-4 flex w-80 flex-col items-center rounded-xl border ${
+        notSure ? "" : "border border-black"
+      } bg-white/10 p-6 hover:bg-white/20`}
     >
       <div className="text-lg">{text}</div>
     </button>

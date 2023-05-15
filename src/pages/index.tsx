@@ -341,7 +341,16 @@ const Home: NextPage = () => {
               }}
             />
           )}
-          {stage === 6 && <>Everything done </>}
+          {stage === 6 && (
+            <>
+              <h2 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
+                Results
+              </h2>
+              <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
+                {JSON.stringify(result, null, 2)}
+              </div>
+            </>
+          )}
         </div>
       </main>
     </>

@@ -34,11 +34,21 @@ export const initialScore: ActiveScore = {
   [Categories.category6]: 50,
 };
 
+type DoNotShowNext = {
+  showNext: false;
+};
+
+type ShowNext = {
+  showNext: true;
+  showNextScore: ScoreModifierValues;
+};
+
+export type ShowNextWrapper = ShowNext | DoNotShowNext;
 type Options = {
   text: string;
   payload: ScoreModifierValues;
 };
-export type Question = {
+export type Question = ShowNextWrapper & {
   text: string;
   metaText?: string;
   image?: string;
