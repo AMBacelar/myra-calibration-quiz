@@ -1,37 +1,33 @@
 export enum Categories {
-  category1 = "CATEGORY1",
-  category2 = "CATEGORY2",
-  category3 = "CATEGORY3",
-  category4 = "CATEGORY4",
-  category5 = "CATEGORY5",
-  category6 = "CATEGORY6",
+  EXTRAVERSION = "Extraversion",
+  AGREEABLENESS = "Agreeableness",
+  OPENNESS = "Openness",
+  CONSCIENTIOUSNESS = "Conscientiousness",
+  NEUROTICISM = "Neuroticism",
 }
 
 export type ScoreModifierValues = {
-  [Categories.category1]: undefined | number;
-  [Categories.category2]: undefined | number;
-  [Categories.category3]: undefined | number;
-  [Categories.category4]: undefined | number;
-  [Categories.category5]: undefined | number;
-  [Categories.category6]: undefined | number;
+  [Categories.EXTRAVERSION]: undefined | number;
+  [Categories.AGREEABLENESS]: undefined | number;
+  [Categories.OPENNESS]: undefined | number;
+  [Categories.CONSCIENTIOUSNESS]: undefined | number;
+  [Categories.NEUROTICISM]: undefined | number;
 };
 
 export type ActiveScore = {
-  [Categories.category1]: number;
-  [Categories.category2]: number;
-  [Categories.category3]: number;
-  [Categories.category4]: number;
-  [Categories.category5]: number;
-  [Categories.category6]: number;
+  [Categories.EXTRAVERSION]: number;
+  [Categories.AGREEABLENESS]: number;
+  [Categories.OPENNESS]: number;
+  [Categories.CONSCIENTIOUSNESS]: number;
+  [Categories.NEUROTICISM]: number;
 };
 
 export const initialScore: ActiveScore = {
-  [Categories.category1]: 50,
-  [Categories.category2]: 50,
-  [Categories.category3]: 50,
-  [Categories.category4]: 50,
-  [Categories.category5]: 50,
-  [Categories.category6]: 50,
+  [Categories.EXTRAVERSION]: 50,
+  [Categories.AGREEABLENESS]: 50,
+  [Categories.OPENNESS]: 50,
+  [Categories.CONSCIENTIOUSNESS]: 50,
+  [Categories.NEUROTICISM]: 50,
 };
 
 type DoNotShowNext = {
@@ -83,36 +79,30 @@ export const updateScore = (
   optionPayload: ScoreModifierValues
 ): ActiveScore => {
   const newScore = {
-    [Categories.category1]:
-      optionPayload[Categories.category1] !== undefined
-        ? currentScore[Categories.category1] +
-          optionPayload[Categories.category1]
-        : currentScore[Categories.category1],
-    [Categories.category2]:
-      optionPayload[Categories.category2] !== undefined
-        ? currentScore[Categories.category2] +
-          optionPayload[Categories.category2]
-        : currentScore[Categories.category2],
-    [Categories.category3]:
-      optionPayload[Categories.category3] !== undefined
-        ? currentScore[Categories.category3] +
-          optionPayload[Categories.category3]
-        : currentScore[Categories.category3],
-    [Categories.category4]:
-      optionPayload[Categories.category4] !== undefined
-        ? currentScore[Categories.category4] +
-          optionPayload[Categories.category4]
-        : currentScore[Categories.category4],
-    [Categories.category5]:
-      optionPayload[Categories.category5] !== undefined
-        ? currentScore[Categories.category5] +
-          optionPayload[Categories.category5]
-        : currentScore[Categories.category5],
-    [Categories.category6]:
-      optionPayload[Categories.category6] !== undefined
-        ? currentScore[Categories.category6] +
-          optionPayload[Categories.category6]
-        : currentScore[Categories.category6],
+    [Categories.EXTRAVERSION]:
+      optionPayload[Categories.EXTRAVERSION] !== undefined
+        ? currentScore[Categories.EXTRAVERSION] +
+          optionPayload[Categories.EXTRAVERSION]
+        : currentScore[Categories.EXTRAVERSION],
+    [Categories.AGREEABLENESS]:
+      optionPayload[Categories.AGREEABLENESS] !== undefined
+        ? currentScore[Categories.AGREEABLENESS] +
+          optionPayload[Categories.AGREEABLENESS]
+        : currentScore[Categories.AGREEABLENESS],
+    [Categories.OPENNESS]:
+      optionPayload[Categories.OPENNESS] !== undefined
+        ? currentScore[Categories.OPENNESS] + optionPayload[Categories.OPENNESS]
+        : currentScore[Categories.OPENNESS],
+    [Categories.CONSCIENTIOUSNESS]:
+      optionPayload[Categories.CONSCIENTIOUSNESS] !== undefined
+        ? currentScore[Categories.CONSCIENTIOUSNESS] +
+          optionPayload[Categories.CONSCIENTIOUSNESS]
+        : currentScore[Categories.CONSCIENTIOUSNESS],
+    [Categories.NEUROTICISM]:
+      optionPayload[Categories.NEUROTICISM] !== undefined
+        ? currentScore[Categories.NEUROTICISM] +
+          optionPayload[Categories.NEUROTICISM]
+        : currentScore[Categories.NEUROTICISM],
   };
 
   console.log("new score is:", newScore);
