@@ -11,8 +11,17 @@ const Home: NextPage = () => {
   const [name, setName] = useState<string>("");
 
   useEffect(() => {
-    console.log(result);
+    if (process.env.NODE_ENV === "development") {
+      console.log(result);
+    }
   }, [result]);
+
+  const handleSubmit = () => {
+    void fetch("/api/post-results", {
+      method: "POST",
+      body: JSON.stringify(result),
+    });
+  };
 
   return (
     <>
@@ -349,6 +358,15 @@ const Home: NextPage = () => {
               <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
                 {JSON.stringify(result, null, 2)}
               </div>
+              <button
+                className="border border-solid border-black p-4"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSubmit();
+                }}
+              >
+                Post To Realtime Database
+              </button>
             </>
           )}
         </div>
