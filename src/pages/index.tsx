@@ -9,6 +9,7 @@ const Home: NextPage = () => {
   const [stage, setStage] = useState(0);
   const [result, setResult] = useState<object>({});
   const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
 
   useEffect(() => {
     if (process.env.NODE_ENV === "development") {
@@ -353,11 +354,40 @@ const Home: NextPage = () => {
           {stage === 6 && (
             <>
               <h2 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
+                What’s your Email?
+              </h2>
+              <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
+                <input
+                  type="text"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="mr-2 border border-solid border-black p-4"
+                />
+                <button
+                  className="border border-solid border-black p-4"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setResult((result) => ({ ...result, email }));
+                    setStage((stage) => stage + 1);
+                  }}
+                >
+                  Go!
+                </button>
+              </div>
+            </>
+          )}
+          {stage === 7 && (
+            <>
+              <h2 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
                 Results
               </h2>
               <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
-                {JSON.stringify(result, null, 2)}
+                <pre>
+                  <code>{JSON.stringify(result, null, 2)}</code>
+                </pre>
               </div>
+
               <button
                 className="border border-solid border-black p-4"
                 onClick={(e) => {
