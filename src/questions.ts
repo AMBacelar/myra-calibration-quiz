@@ -1014,8 +1014,8 @@ export const questions: Question[] = [
   },
 
   {
-    text: "question 2 text?",
-    direction: "row",
+    text: "maths question 1?",
+    direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
@@ -1032,7 +1032,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "answer 1",
         payload: {
           [Categories.EXTRAVERSION]: 20,
           [Categories.AGREEABLENESS]: undefined,
@@ -1042,7 +1042,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "bad answer",
+        text: "answer 2",
         payload: {
           [Categories.EXTRAVERSION]: -3,
           [Categories.AGREEABLENESS]: undefined,
@@ -1052,13 +1052,88 @@ export const questions: Question[] = [
         },
       },
     ],
-    showNotSure: true,
-    showNotSureScore: {
+    showNotSure: false,
+  },
+  {
+    text: "maths question 2?",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
       [Categories.OPENNESS]: undefined,
       [Categories.CONSCIENTIOUSNESS]: undefined,
       [Categories.NEUROTICISM]: undefined,
     },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "answer 1",
+        payload: {
+          [Categories.EXTRAVERSION]: 20,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "answer 2",
+        payload: {
+          [Categories.EXTRAVERSION]: -3,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
+  },
+  {
+    text: "maths question 3?",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "answer 1",
+        payload: {
+          [Categories.EXTRAVERSION]: 20,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "answer 2",
+        payload: {
+          [Categories.EXTRAVERSION]: -3,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
   },
 ];
