@@ -1,7 +1,7 @@
 import { type NextApiRequest, type NextApiResponse } from "next";
 import { createFirebaseAdminApp } from "../../lib/firebase/firebaseAdmin";
 import { getDatabase } from "firebase-admin/database";
-import { sendWaitlistEmail } from "~/lib/brevo/send-waitlist-email";
+import { sendWaitlistEmail } from "../../lib/brevo/send-waitlist-email";
 
 export default async function getTeams(
   req: NextApiRequest,
@@ -19,7 +19,7 @@ export default async function getTeams(
 
         const newUsersRef = ref.push();
         await newUsersRef.set(payload);
-        sendWaitlistEmail(payload.email, payload.name);
+        await sendWaitlistEmail(payload.email, payload.name);
         res.status(200).json({ success: true });
       } catch (error) {
         console.error(error);
