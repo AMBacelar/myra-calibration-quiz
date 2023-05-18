@@ -220,7 +220,7 @@ export const finalQuestions: AlternativeQuestion[] = [
 
 export const questions: Question[] = [
   {
-    text: "Question",
+    text: "Test question with 3/1 answers",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -238,7 +238,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Answer 1",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -248,7 +248,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "answer 2",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -258,7 +258,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "answer 3",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -278,7 +278,123 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question",
+    text: "Test question with 3/2 answers",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "Answer 1",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "answer 2",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "answer 3",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Test question with 3/3 answers",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "Answer 1",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "answer 2",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "answer 3",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Flag Question 1 ",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -337,7 +453,186 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Who said?",
+    text: "Flag Question 2 ",
+    image: "/images/montserrat.png",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Flag Question 3 ",
+    image: "/images/montserrat.png",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Flag Question 4 ",
+    image: "/images/montserrat.png",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+
+  
+  {
+    text: "Who said? 1",
     metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -396,7 +691,185 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Michael ________ was born 1958.",
+    text: "Who said? 2",
+    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Who said? 3",
+    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Who said? 4",
+    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+
+  {
+    text: "1 Michael ________ was born 1958.",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -444,8 +917,8 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "question 2 text?",
-    direction: "row",
+    text: "2 Michael ________ was born 1958.",
+    direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
@@ -464,20 +937,20 @@ export const questions: Question[] = [
       {
         text: "good answer",
         payload: {
-          [Categories.EXTRAVERSION]: 20,
-          [Categories.AGREEABLENESS]: undefined,
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
           [Categories.OPENNESS]: undefined,
-          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
           [Categories.NEUROTICISM]: undefined,
         },
       },
       {
-        text: "bad answer",
+        text: "okay answer",
         payload: {
-          [Categories.EXTRAVERSION]: -3,
+          [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
           [Categories.OPENNESS]: undefined,
-          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
           [Categories.NEUROTICISM]: undefined,
         },
       },
@@ -490,5 +963,177 @@ export const questions: Question[] = [
       [Categories.CONSCIENTIOUSNESS]: undefined,
       [Categories.NEUROTICISM]: undefined,
     },
+  },
+  {
+    text: "3 Michael ________ was born 1958.",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+
+  {
+    text: "maths question 1?",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "answer 1",
+        payload: {
+          [Categories.EXTRAVERSION]: 20,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "answer 2",
+        payload: {
+          [Categories.EXTRAVERSION]: -3,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
+  },
+  {
+    text: "maths question 2?",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "answer 1",
+        payload: {
+          [Categories.EXTRAVERSION]: 20,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "answer 2",
+        payload: {
+          [Categories.EXTRAVERSION]: -3,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
+  },
+  {
+    text: "maths question 3?",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "answer 1",
+        payload: {
+          [Categories.EXTRAVERSION]: 20,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "answer 2",
+        payload: {
+          [Categories.EXTRAVERSION]: -3,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: undefined,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
   },
 ];
