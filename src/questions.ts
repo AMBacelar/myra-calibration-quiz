@@ -220,7 +220,7 @@ export const finalQuestions: AlternativeQuestion[] = [
 
 export const questions: Question[] = [
   {
-    text: "Question",
+    text: "Test question with 3 answers",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -238,7 +238,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Answer 1",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -248,7 +248,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "answer 2",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -258,7 +258,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "answer 3",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
