@@ -632,7 +632,7 @@ export const questions: Question[] = [
 
   
   {
-    text: "Who said?",
+    text: "Who said? 1",
     metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -690,6 +690,184 @@ export const questions: Question[] = [
       [Categories.NEUROTICISM]: undefined,
     },
   },
+  {
+    text: "Who said? 2",
+    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Who said? 3",
+    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Who said? 4",
+    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+
   {
     text: "Michael ________ was born 1958.",
     direction: "column",
