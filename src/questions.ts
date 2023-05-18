@@ -1136,4 +1136,316 @@ export const questions: Question[] = [
     ],
     showNotSure: false,
   },
+  {
+    text: "Rate yourself 1",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "Excellent",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Above Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Below Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
+
+  },
+  {
+    text: "Rate yourself 2",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "Excellent",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Above Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Below Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
+
+  },
+  {
+    text: "Rate yourself 3",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "Excellent",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Above Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Below Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
+
+  },
+  {
+    text: "Rate yourself 4",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "Excellent",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Above Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Below Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
+
+  },
+  {
+    text: "Rate yourself 5",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "Excellent",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Above Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "Below Average",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: false,
+
+  },
+
+  
 ];
