@@ -66,7 +66,7 @@ export const AlternativeQuestions: FunctionComponent<{
             }}
           />
         ))}
-        {question.showNext && (
+        {question.showNotSure && (
           <Option
             text={"I'm not sure"}
             notSure

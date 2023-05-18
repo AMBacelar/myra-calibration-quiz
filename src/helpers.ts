@@ -30,21 +30,21 @@ export const initialScore: ActiveScore = {
   [Categories.NEUROTICISM]: 50,
 };
 
-type DoNotShowNext = {
-  showNext: false;
+type DoNotShowNotSure = {
+  showNotSure: false;
 };
 
-type ShowNext = {
-  showNext: true;
-  showNextScore: ScoreModifierValues;
+type ShowNotSure = {
+  showNotSure: true;
+  showNotSureScore: ScoreModifierValues;
 };
 
-export type ShowNextWrapper = ShowNext | DoNotShowNext;
+export type ShowNotSureWrapper = ShowNotSure | DoNotShowNotSure;
 type Options = {
   text: string;
   payload: ScoreModifierValues;
 };
-export type Question = ShowNextWrapper & {
+export type Question = ShowNotSureWrapper & {
   text: string;
   metaText?: string;
   image?: string;

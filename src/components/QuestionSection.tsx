@@ -77,12 +77,12 @@ export const QuestionSection: FunctionComponent<{
             }}
           />
         ))}
-        {question.showNext && (
+        {question.showNotSure && (
           <Option
             text={"I'm not sure"}
             notSure
             onClick={() => {
-              setScore(updateScore(score, question.showNextScore));
+              setScore(updateScore(score, question.showNotSureScore));
             }}
           />
         )}
