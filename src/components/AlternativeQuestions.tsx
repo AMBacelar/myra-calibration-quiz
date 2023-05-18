@@ -68,7 +68,7 @@ export const AlternativeQuestions: FunctionComponent<{
         ))}
         {question.showNotSure && (
           <Option
-            text={"I'm not sure"}
+            text={"I am unsure"}
             notSure
             onClick={() => {
               setResult((result) => ({
