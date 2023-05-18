@@ -869,7 +869,7 @@ export const questions: Question[] = [
   },
 
   {
-    text: "Michael ________ was born 1958.",
+    text: "1 Michael ________ was born 1958.",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -916,6 +916,103 @@ export const questions: Question[] = [
       [Categories.NEUROTICISM]: undefined,
     },
   },
+  {
+    text: "2 Michael ________ was born 1958.",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "3 Michael ________ was born 1958.",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+
   {
     text: "question 2 text?",
     direction: "row",
