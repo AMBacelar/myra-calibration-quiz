@@ -18,9 +18,14 @@ const Home: NextPage = () => {
   }, [result]);
 
   const handleSubmit = () => {
+    const body = JSON.stringify(result);
     void fetch("/api/post-results", {
       method: "POST",
-      body: JSON.stringify(result),
+      body,
+    });
+    void fetch("/api/send-email", {
+      method: "POST",
+      body,
     });
   };
 
