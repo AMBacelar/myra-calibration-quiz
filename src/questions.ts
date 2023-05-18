@@ -394,7 +394,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question",
+    text: "Flag Question 1 ",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -452,6 +452,185 @@ export const questions: Question[] = [
       [Categories.NEUROTICISM]: undefined,
     },
   },
+  {
+    text: "Flag Question 2 ",
+    image: "/images/montserrat.png",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Flag Question 3 ",
+    image: "/images/montserrat.png",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+  {
+    text: "Flag Question 4 ",
+    image: "/images/montserrat.png",
+    direction: "column",
+    minimumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    maximumScoresRequiredToDisplayQuestion: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+    options: [
+      {
+        text: "good answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 10,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 14,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "okay answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: undefined,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 7,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+      {
+        text: "interesting answer",
+        payload: {
+          [Categories.EXTRAVERSION]: undefined,
+          [Categories.AGREEABLENESS]: 2,
+          [Categories.OPENNESS]: undefined,
+          [Categories.CONSCIENTIOUSNESS]: 6,
+          [Categories.NEUROTICISM]: undefined,
+        },
+      },
+    ],
+    showNotSure: true,
+    showNotSureScore: {
+      [Categories.EXTRAVERSION]: undefined,
+      [Categories.AGREEABLENESS]: undefined,
+      [Categories.OPENNESS]: undefined,
+      [Categories.CONSCIENTIOUSNESS]: undefined,
+      [Categories.NEUROTICISM]: undefined,
+    },
+  },
+
+  
   {
     text: "Who said?",
     metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
