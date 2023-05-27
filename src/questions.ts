@@ -296,7 +296,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Cabin in the Woods",
+        text: "Cabin + The Woods",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -306,7 +306,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Mansion on a Deserted Island",
+        text: "Mansion + Deserted Island",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -316,7 +316,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Penthouse in the South Pole",
+        text: "Penthouse + The South Pole",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
