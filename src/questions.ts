@@ -296,7 +296,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Cabin | The Woods",
+        text: "Cabin in The Woods",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -306,7 +306,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Mansion | Deserted Island",
+        text: "Mansion on Desert Island",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -316,7 +316,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Penthouse | South Pole",
+        text: "Penthouse in South Pole",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -354,7 +354,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Super Car | No friends",
+        text: "Super Car with no friends",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -364,7 +364,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Private Jet | Irate partner",
+        text: "Private Jet with an irate partner",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -374,7 +374,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Walk anywhere | With Anyone",
+        text: "Walk anywhere with Anyone",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -1014,7 +1014,7 @@ export const questions: Question[] = [
   },
 
   {
-    text: "maths question 1?",
+    text: "How many hours are in a minute?",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1032,7 +1032,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "answer 1",
+        text: "0.016",
         payload: {
           [Categories.EXTRAVERSION]: 20,
           [Categories.AGREEABLENESS]: undefined,
@@ -1042,7 +1042,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "1.6%",
         payload: {
           [Categories.EXTRAVERSION]: -3,
           [Categories.AGREEABLENESS]: undefined,
