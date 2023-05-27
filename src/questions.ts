@@ -220,7 +220,7 @@ export const finalQuestions: AlternativeQuestion[] = [
 
 export const questions: Question[] = [
   {
-    text: "If you had to be one extreme weather type which one would it be?",
+    text: "Pick one extreme weather type you would be",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -278,7 +278,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "If you had to chose to live in one of these houses and locations, which one would it be?",
+    text: "Pick where you would live",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -296,7 +296,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Cabin + The Woods",
+        text: "Cabin | The Woods",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -306,7 +306,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Mansion + Deserted Island",
+        text: "Mansion | Deserted Island",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -316,7 +316,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Penthouse + The South Pole",
+        text: "Penthouse | South Pole",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -336,7 +336,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "What would you rather?",
+    text: "Pick One",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -354,7 +354,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Super Car but not allowed friends",
+        text: "Super Car | No friends",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -364,7 +364,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Private Jet with an irate partner",
+        text: "Private Jet | Irate partner",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -374,7 +374,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "Walk anywhere with Anyone",
+        text: "Walk anywhere | With Anyone",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -453,7 +453,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Name the Flag? ",
+    text: "Name the Flag",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -512,7 +512,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Name the Flag?",
+    text: "Name the Flag",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -632,7 +632,7 @@ export const questions: Question[] = [
 
   
   {
-    text: "Who said? 1",
+    text: "Who said",
     metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
