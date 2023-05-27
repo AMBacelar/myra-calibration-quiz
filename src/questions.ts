@@ -220,7 +220,7 @@ export const finalQuestions: AlternativeQuestion[] = [
 
 export const questions: Question[] = [
   {
-    text: "Test question with 3/1 answers",
+    text: "If you had to be one extreme weather type which one would it be?",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -238,7 +238,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Answer 1",
+        text: "Rain",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -248,7 +248,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "Snow",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -258,7 +258,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 3",
+        text: "Hail",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
