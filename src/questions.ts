@@ -651,7 +651,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Edmund Burke",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -661,7 +661,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Lord Acton",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -691,8 +691,8 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Who said? 2",
-    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    text: "Who said",
+    metaText: `“I have not failed. I've just found 10,000 ways that won't work.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -710,7 +710,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Peter Drucker",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -720,7 +720,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Thomas Edison",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -750,8 +750,8 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Who said? 3",
-    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    text: "Who said",
+    metaText: `“Government of the people, by the people, for the people, shall not perish from the earth.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -769,7 +769,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Thomas Jefferson",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -779,7 +779,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Abraham Lincoln",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -809,8 +809,8 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Who said? 4",
-    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    text: "Who said",
+    metaText: `“In the end, we will remember not the words of our enemies, but the silence of our friends.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -828,7 +828,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Martin Luther King Jr",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -838,7 +838,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Mahatma Gandhi",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
