@@ -336,7 +336,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Test question with 3/3 answers",
+    text: "What would you rather?",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -354,7 +354,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Answer 1",
+        text: "Super Car but not allowed friends",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -364,7 +364,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "Private Jet with an irate partner",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -374,7 +374,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 3",
+        text: "Walk anywhere with Anyone",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
