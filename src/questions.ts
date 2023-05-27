@@ -394,7 +394,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question 1 ",
+    text: "Name the Flag?",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -413,7 +413,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "America",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -423,7 +423,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "South Korea",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -433,7 +433,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "China",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -453,7 +453,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question 2 ",
+    text: "Name the Flag? ",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -472,7 +472,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Cuba",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -482,7 +482,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Brazil",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -492,7 +492,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "Barbados",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -512,7 +512,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question 3 ",
+    text: "Name the Flag?",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -531,7 +531,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "India",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -541,7 +541,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "South Africa",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -551,7 +551,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "Mexico",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -571,7 +571,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question 4 ",
+    text: "Name the Flag",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -590,7 +590,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Australia",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -600,7 +600,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Montserrat",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -610,7 +610,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "Fiji",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
