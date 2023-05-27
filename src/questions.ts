@@ -1055,7 +1055,7 @@ export const questions: Question[] = [
     showNotSure: false,
   },
   {
-    text: "maths question 2?",
+    text: "1 Royal cubits =",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1073,7 +1073,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "answer 1",
+        text: "21 inches",
         payload: {
           [Categories.EXTRAVERSION]: 20,
           [Categories.AGREEABLENESS]: undefined,
@@ -1083,7 +1083,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "54cm",
         payload: {
           [Categories.EXTRAVERSION]: -3,
           [Categories.AGREEABLENESS]: undefined,
@@ -1096,7 +1096,7 @@ export const questions: Question[] = [
     showNotSure: false,
   },
   {
-    text: "maths question 3?",
+    text: "What is pi π?",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1114,7 +1114,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "answer 1",
+        text: "3.141",
         payload: {
           [Categories.EXTRAVERSION]: 20,
           [Categories.AGREEABLENESS]: undefined,
@@ -1124,7 +1124,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "3.411",
         payload: {
           [Categories.EXTRAVERSION]: -3,
           [Categories.AGREEABLENESS]: undefined,
