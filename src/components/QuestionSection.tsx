@@ -55,6 +55,7 @@ export const QuestionSection: FunctionComponent<{
       <h2 className="font-extrabold leading-none tracking-tight sm:text-[5rem]">
         {question.text}
       </h2>
+      {question.metaText && <p>{question.metaText}</p>}
       {question.image && (
         <Image
           width={640}
