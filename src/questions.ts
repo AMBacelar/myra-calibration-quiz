@@ -220,7 +220,7 @@ export const finalQuestions: AlternativeQuestion[] = [
 
 export const questions: Question[] = [
   {
-    text: "Test question with 3/1 answers",
+    text: "Pick one extreme weather type you would be",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -238,7 +238,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Answer 1",
+        text: "Rain",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -248,7 +248,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "Snow",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -258,7 +258,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 3",
+        text: "Hail",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -278,7 +278,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Test question with 3/2 answers",
+    text: "Pick where you would live",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -296,7 +296,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Answer 1",
+        text: "Cabin in The Woods",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -306,7 +306,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "Mansion on Desert Island",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -316,7 +316,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 3",
+        text: "Penthouse in South Pole",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -336,7 +336,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Test question with 3/3 answers",
+    text: "Pick One",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -354,7 +354,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "Answer 1",
+        text: "Super Car with no friends",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -364,7 +364,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "Private Jet with an irate partner",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -374,7 +374,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 3",
+        text: "Walk anywhere with Anyone",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -394,7 +394,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question 1 ",
+    text: "Name the Flag?",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -413,7 +413,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "America",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -423,7 +423,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "South Korea",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -433,7 +433,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "China",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -453,7 +453,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question 2 ",
+    text: "Name the Flag",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -472,7 +472,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Cuba",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -482,7 +482,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Brazil",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -492,7 +492,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "Barbados",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -512,7 +512,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question 3 ",
+    text: "Name the Flag",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -531,7 +531,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "India",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -541,7 +541,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "South Africa",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -551,7 +551,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "Mexico",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -571,7 +571,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Flag Question 4 ",
+    text: "Name the Flag",
     image: "/images/montserrat.png",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -590,7 +590,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Australia",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -600,7 +600,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Montserrat",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -610,7 +610,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "interesting answer",
+        text: "Fiji",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 2,
@@ -632,7 +632,7 @@ export const questions: Question[] = [
 
   
   {
-    text: "Who said? 1",
+    text: "Who said",
     metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
@@ -651,7 +651,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Edmund Burke",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -661,7 +661,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Lord Acton",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -691,8 +691,8 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Who said? 2",
-    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    text: "Who said",
+    metaText: `“I have not failed. I've just found 10,000 ways that won't work.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -710,7 +710,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Peter Drucker",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -720,7 +720,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Thomas Edison",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -750,8 +750,8 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Who said? 3",
-    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    text: "Who said",
+    metaText: `“Government of the people, by the people, for the people, shall not perish from the earth.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -769,7 +769,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Thomas Jefferson",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -779,7 +779,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Abraham Lincoln",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -809,8 +809,8 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "Who said? 4",
-    metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
+    text: "Who said",
+    metaText: `“In the end, we will remember not the words of our enemies, but the silence of our friends.”`,
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -828,7 +828,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Martin Luther King Jr",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -838,7 +838,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Mahatma Gandhi",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -1014,7 +1014,7 @@ export const questions: Question[] = [
   },
 
   {
-    text: "maths question 1?",
+    text: "How many hours are in a minute?",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1032,7 +1032,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "answer 1",
+        text: "0.016",
         payload: {
           [Categories.EXTRAVERSION]: 20,
           [Categories.AGREEABLENESS]: undefined,
@@ -1042,7 +1042,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "1.6%",
         payload: {
           [Categories.EXTRAVERSION]: -3,
           [Categories.AGREEABLENESS]: undefined,
@@ -1055,7 +1055,7 @@ export const questions: Question[] = [
     showNotSure: false,
   },
   {
-    text: "maths question 2?",
+    text: "1 Royal cubits =",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1073,7 +1073,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "answer 1",
+        text: "21 inches",
         payload: {
           [Categories.EXTRAVERSION]: 20,
           [Categories.AGREEABLENESS]: undefined,
@@ -1083,7 +1083,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "54cm",
         payload: {
           [Categories.EXTRAVERSION]: -3,
           [Categories.AGREEABLENESS]: undefined,
@@ -1096,7 +1096,7 @@ export const questions: Question[] = [
     showNotSure: false,
   },
   {
-    text: "maths question 3?",
+    text: "What is pi π?",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1114,7 +1114,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "answer 1",
+        text: "3.141",
         payload: {
           [Categories.EXTRAVERSION]: 20,
           [Categories.AGREEABLENESS]: undefined,
@@ -1124,7 +1124,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "answer 2",
+        text: "3.411",
         payload: {
           [Categories.EXTRAVERSION]: -3,
           [Categories.AGREEABLENESS]: undefined,
