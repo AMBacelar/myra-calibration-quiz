@@ -9,16 +9,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "d3": "^7.8.4",
     "firebase-admin": "^11.8.0",
     "next": "^13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "recharts": "^2.7.1",
     "sib-api-v3-sdk": "^8.5.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@types/d3": "^7.4.0",
     "@types/eslint": "^8.21.3",
     "@types/node": "^18.15.5",
     "@types/prettier": "^2.7.2",

@@ -4,9 +4,10 @@ import { finalQuestions, initialQuestions, questions } from "~/questions";
 import { QuestionSection } from "../components/QuestionSection";
 import { AlternativeQuestions } from "~/components/AlternativeQuestions";
 import { useEffect, useState } from "react";
+import { Results } from "~/components/Results";
 
 const Home: NextPage = () => {
-  const [stage, setStage] = useState(0);
+  const [stage, setStage] = useState(-1);
   const [result, setResult] = useState<object>({});
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -42,6 +43,32 @@ const Home: NextPage = () => {
             Myra <span className="text-[hsl(280,100%,70%)]">Empathy</span>{" "}
             Calibration
           </h1>
+          {stage === -1 && (
+            <>
+              <h2 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
+                Welcome screen
+              </h2>
+              <div
+                style={{
+                  width: 800,
+                  height: 800,
+                }}
+              >
+                <Results data={result} />
+              </div>
+              <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setStage((stage) => stage + 1);
+                  }}
+                  className="m-4 flex w-80 flex-col rounded-xl border border-black bg-white/10 p-6 hover:bg-white/20"
+                >
+                  <div className="text-lg">Start</div>
+                </button>
+              </div>
+            </>
+          )}
           {stage === 0 && (
             <AlternativeQuestions
               questions={initialQuestions}
@@ -387,6 +414,7 @@ const Home: NextPage = () => {
               <h2 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
                 Results
               </h2>
+              <Results />
               <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
                 <pre>
                   <code>{JSON.stringify(result, null, 2)}</code>
