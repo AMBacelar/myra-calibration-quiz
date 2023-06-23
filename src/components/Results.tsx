@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import {
   Radar,
   RadarChart,
@@ -7,7 +7,7 @@ import {
   PolarRadiusAxis,
   ResponsiveContainer,
 } from "recharts";
-import { ActiveScore, Categories } from "~/helpers";
+import { type ActiveScore, Categories } from "~/helpers";
 
 const getsScore = (results: ActiveScore) => [
   { A: results[Categories.EXTRAVERSION], subject: Categories.EXTRAVERSION },
@@ -20,7 +20,7 @@ const getsScore = (results: ActiveScore) => [
   { A: results[Categories.NEUROTICISM], subject: Categories.NEUROTICISM },
 ];
 
-export const Results = ({ data }: any) => {
+export const Results = ({ data }: { data: ActiveScore }) => {
   const results = getsScore(data);
   return (
     <div

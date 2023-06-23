@@ -5,7 +5,7 @@ import { QuestionSection } from "../components/QuestionSection";
 import { AlternativeQuestions } from "~/components/AlternativeQuestions";
 import { useEffect, useState } from "react";
 import { Results } from "~/components/Results";
-import { ActiveScore, Categories } from "~/helpers";
+import { type ActiveScore, Categories } from "~/helpers";
 
 const Home: NextPage = () => {
   const [stage, setStage] = useState(-1);
@@ -35,15 +35,6 @@ const Home: NextPage = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
 
-  useEffect(() => {
-    if (process.env.NODE_ENV === "development") {
-      console.log(result);
-    }
-    if (result.email) {
-      handleSubmit();
-    }
-  }, [result]);
-
   const handleSubmit = () => {
     const body = JSON.stringify(result);
     void fetch("/api/post-results", {
@@ -55,6 +46,15 @@ const Home: NextPage = () => {
       body,
     });
   };
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === "development") {
+      console.log(result);
+    }
+    if (result.email) {
+      handleSubmit();
+    }
+  }, [result]);
 
   return (
     <>

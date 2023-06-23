@@ -1,66 +1,4 @@
-import { Categories, ShowNotSureWrapper, type Question } from "./helpers";
-
-const questionTemplate: Question = {
-  text: "question text?",
-  direction: "column",
-  minimumScoresRequiredToDisplayQuestion: {
-    [Categories.EXTRAVERSION]: undefined,
-    [Categories.AGREEABLENESS]: undefined,
-    [Categories.OPENNESS]: undefined,
-    [Categories.CONSCIENTIOUSNESS]: 30,
-    [Categories.NEUROTICISM]: undefined,
-  },
-  maximumScoresRequiredToDisplayQuestion: {
-    [Categories.EXTRAVERSION]: undefined,
-    [Categories.AGREEABLENESS]: undefined,
-    [Categories.OPENNESS]: undefined,
-    [Categories.CONSCIENTIOUSNESS]: 80,
-    [Categories.NEUROTICISM]: undefined,
-  },
-  options: [
-    {
-      text: "good answer",
-      payload: {
-        [Categories.EXTRAVERSION]: undefined,
-        [Categories.AGREEABLENESS]: 10,
-        [Categories.OPENNESS]: undefined,
-        [Categories.CONSCIENTIOUSNESS]: 14,
-        [Categories.NEUROTICISM]: undefined,
-      },
-    },
-    {
-      text: "okay answer",
-      payload: {
-        [Categories.EXTRAVERSION]: undefined,
-        [Categories.AGREEABLENESS]: undefined,
-        [Categories.OPENNESS]: undefined,
-        [Categories.CONSCIENTIOUSNESS]: 7,
-        [Categories.NEUROTICISM]: undefined,
-      },
-    },
-    {
-      text: "interesting answer",
-      payload: {
-        [Categories.EXTRAVERSION]: undefined,
-        [Categories.AGREEABLENESS]: 2,
-        [Categories.OPENNESS]: undefined,
-        [Categories.CONSCIENTIOUSNESS]: 6,
-        [Categories.NEUROTICISM]: undefined,
-      },
-    },
-    {
-      text: "bad answer",
-      payload: {
-        [Categories.EXTRAVERSION]: undefined,
-        [Categories.AGREEABLENESS]: -19,
-        [Categories.OPENNESS]: undefined,
-        [Categories.CONSCIENTIOUSNESS]: -8,
-        [Categories.NEUROTICISM]: undefined,
-      },
-    },
-  ],
-  showNotSure: false,
-};
+import { Categories, type ShowNotSureWrapper, type Question } from "./helpers";
 
 export type AlternativeQuestion = ShowNotSureWrapper & {
   key: string;
@@ -630,7 +568,6 @@ export const questions: Question[] = [
     },
   },
 
-  
   {
     text: "Who said",
     metaText: `“The only thing necessary for the triumph of evil is for good men to do nothing.”`,
@@ -1196,7 +1133,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-
   },
   {
     text: "Rate yourself 2",
@@ -1258,7 +1194,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-
   },
   {
     text: "Rate yourself 3",
@@ -1320,7 +1255,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-
   },
   {
     text: "Rate yourself 4",
@@ -1382,7 +1316,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-
   },
   {
     text: "Rate yourself 5",
@@ -1444,8 +1377,5 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-
   },
-
-  
 ];
