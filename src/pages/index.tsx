@@ -433,14 +433,7 @@ const Home: NextPage = () => {
               <h2 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
                 Results
               </h2>
-              <div
-                style={{
-                  width: 500,
-                  height: 500,
-                }}
-              >
-                <Results data={quizScore} />
-              </div>
+              <Results data={quizScore} />
             </>
           )}
         </div>

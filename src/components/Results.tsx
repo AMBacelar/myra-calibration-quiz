@@ -23,19 +23,26 @@ const getsScore = (results: ActiveScore) => [
 export const Results = ({ data }: any) => {
   const results = getsScore(data);
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={results}>
-        <PolarGrid />
-        <PolarAngleAxis dataKey="subject" />
-        <PolarRadiusAxis />
-        <Radar
-          name="You"
-          dataKey="A"
-          stroke="#8884d8"
-          fill="#8884d8"
-          fillOpacity={0.6}
-        />
-      </RadarChart>
-    </ResponsiveContainer>
+    <div
+      style={{
+        width: 800,
+        height: 500,
+      }}
+    >
+      <ResponsiveContainer width="100%" height="100%">
+        <RadarChart cx="50%" cy="50%" outerRadius="80%" data={results}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis />
+          <Radar
+            name="You"
+            dataKey="A"
+            stroke="#8884d8"
+            fill="#8884d8"
+            fillOpacity={0.6}
+          />
+        </RadarChart>
+      </ResponsiveContainer>
+    </div>
   );
 };
