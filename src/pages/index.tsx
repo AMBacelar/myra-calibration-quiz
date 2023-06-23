@@ -5,16 +5,42 @@ import { QuestionSection } from "../components/QuestionSection";
 import { AlternativeQuestions } from "~/components/AlternativeQuestions";
 import { useEffect, useState } from "react";
 import { Results } from "~/components/Results";
+import { ActiveScore, Categories } from "~/helpers";
 
 const Home: NextPage = () => {
   const [stage, setStage] = useState(-1);
-  const [result, setResult] = useState<object>({});
+  const [result, setResult] = useState<
+    Partial<{
+      country: string;
+      email: string;
+      ethnicity: string;
+      name: string;
+      primary_goal: string;
+      better_memory: string;
+      improve_creativity: string;
+      improve_focus: string;
+      planning_organising: string;
+      problem_solving: string;
+      surname_origin: string;
+      score: ActiveScore;
+    }>
+  >({});
+  const [quizScore, setQuizScore] = useState<ActiveScore>({
+    [Categories.EXTRAVERSION]: 0,
+    [Categories.AGREEABLENESS]: 0,
+    [Categories.OPENNESS]: 0,
+    [Categories.CONSCIENTIOUSNESS]: 0,
+    [Categories.NEUROTICISM]: 0,
+  });
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
 
   useEffect(() => {
     if (process.env.NODE_ENV === "development") {
       console.log(result);
+    }
+    if (result.email) {
+      handleSubmit();
     }
   }, [result]);
 
@@ -48,14 +74,6 @@ const Home: NextPage = () => {
               <h2 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
                 Welcome screen
               </h2>
-              <div
-                style={{
-                  width: 800,
-                  height: 800,
-                }}
-              >
-                <Results data={result} />
-              </div>
               <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
                 <button
                   onClick={(e) => {
@@ -342,6 +360,7 @@ const Home: NextPage = () => {
             <QuestionSection
               questions={questions}
               onLastQuestionAnswered={(score) => {
+                setQuizScore(score);
                 setResult((result) => ({ ...result, score }));
                 setStage((stage) => stage + 1);
               }}
@@ -414,22 +433,14 @@ const Home: NextPage = () => {
               <h2 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
                 Results
               </h2>
-              <Results />
-              <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
-                <pre>
-                  <code>{JSON.stringify(result, null, 2)}</code>
-                </pre>
-              </div>
-
-              <button
-                className="border border-solid border-black p-4"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSubmit();
+              <div
+                style={{
+                  width: 500,
+                  height: 500,
                 }}
               >
-                Post To Realtime Database
-              </button>
+                <Results data={quizScore} />
+              </div>
             </>
           )}
         </div>
