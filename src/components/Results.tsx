@@ -6,6 +6,7 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   ResponsiveContainer,
+  Tooltip,
 } from "recharts";
 import { type ActiveScore, Categories } from "~/helpers";
 
@@ -25,8 +26,8 @@ export const Results = ({ data }: { data: ActiveScore }) => {
   return (
     <div
       style={{
-        width: 800,
-        height: 500,
+        width: "100%",
+        height: 300,
       }}
     >
       <ResponsiveContainer width="100%" height="100%">
@@ -34,6 +35,7 @@ export const Results = ({ data }: { data: ActiveScore }) => {
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
           <PolarRadiusAxis />
+          <Tooltip />
           <Radar
             name="You"
             dataKey="A"
