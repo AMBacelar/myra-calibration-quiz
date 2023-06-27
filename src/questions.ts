@@ -510,7 +510,7 @@ export const questions: Question[] = [
   },
   {
     text: "Name the Flag",
-    image: "/images/montserrat.png",
+    image: "/images/ms.svg",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
