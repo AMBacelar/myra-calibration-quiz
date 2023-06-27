@@ -1034,7 +1034,7 @@ export const questions: Question[] = [
     showNotSure: false,
   },
   {
-    text: "Rate yourself 1",
+    text: "Rate your ability to recognise when you feel more special or better than others",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1095,7 +1095,7 @@ export const questions: Question[] = [
     showNotSure: false,
   },
   {
-    text: "Rate yourself 2",
+    text: "Rate your ability to understand and relate to the feelings of others",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1156,7 +1156,7 @@ export const questions: Question[] = [
     showNotSure: false,
   },
   {
-    text: "Rate yourself 3",
+    text: "Rate your ability to be happy for others' success and achievements",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1217,7 +1217,7 @@ export const questions: Question[] = [
     showNotSure: false,
   },
   {
-    text: "Rate yourself 4",
+    text: "Rate your ability to show empathy and compassion towards others",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -1278,7 +1278,7 @@ export const questions: Question[] = [
     showNotSure: false,
   },
   {
-    text: "Rate yourself 5",
+    text: "Rate your ability to handle feedback or criticism in a mature and constructive way",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
