@@ -85,6 +85,30 @@ const Home: NextPage = () => {
                   <div className="text-lg">Start</div>
                 </button>
               </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  rutrum velit id lacus imperdiet suscipit. Fusce a mi mauris.
+                  Donec tempor mi augue, elementum suscipit tortor elementum
+                  fermentum. Integer id rhoncus diam. Sed pulvinar elit at felis
+                  vestibulum, non sodales turpis scelerisque. Class aptent
+                  taciti sociosqu ad litora torquent per conubia nostra, per
+                  inceptos himenaeos. Etiam imperdiet feugiat tortor, non
+                  sodales felis venenatis sit amet. Aliquam quam ligula, lacinia
+                  sed ultrices ut, cursus non augue. Sed ac condimentum lectus,
+                  eget interdum nisi.
+                </p>
+
+                <p>
+                  Quisque quis erat a tellus ullamcorper ullamcorper. Donec
+                  sapien nunc, faucibus vitae ornare in, sodales sit amet
+                  tortor. Sed justo risus, rhoncus sed nisi non, imperdiet
+                  tristique nibh. Morbi eget orci dolor. In hac habitasse platea
+                  dictumst. Nunc ac massa semper turpis ornare commodo id
+                  ultricies ipsum. Mauris rhoncus mi risus, non viverra turpis
+                  euismod non.
+                </p>
+              </div>
             </>
           )}
           {stage === 0 && (
