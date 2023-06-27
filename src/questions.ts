@@ -333,7 +333,7 @@ export const questions: Question[] = [
   },
   {
     text: "Name the Flag?",
-    image: "/images/montserrat.png",
+    image: "/images/cn.svg",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -392,7 +392,7 @@ export const questions: Question[] = [
   },
   {
     text: "Name the Flag",
-    image: "/images/montserrat.png",
+    image: "/images/cu.svg",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -451,7 +451,7 @@ export const questions: Question[] = [
   },
   {
     text: "Name the Flag",
-    image: "/images/montserrat.png",
+    image: "/images/za.svg",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -510,7 +510,7 @@ export const questions: Question[] = [
   },
   {
     text: "Name the Flag",
-    image: "/images/montserrat.png",
+    image: "/images/ms.svg",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
