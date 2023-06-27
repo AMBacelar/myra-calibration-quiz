@@ -66,14 +66,20 @@ const Home: NextPage = () => {
       <main className="flex min-h-screen flex-col items-center justify-center text-black">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-            Myra <span className="text-[hsl(280,100%,70%)]">Empathy</span>{" "}
-            Calibration
+            Myra <span className="text-[hsl(280,100%,70%)]">MPQ</span>s
           </h1>
           {stage === -1 && (
             <>
               <h2 className="text-5xl font-extrabold tracking-tight text-black sm:text-[5rem]">
-                Welcome screen
+                Welcome
               </h2>
+              <div>
+                <p>
+                  Discover your true self and embrace diverse perspectives. Step
+                  into a world of empathy and culture, as you embark on a
+                  transformative journey of self-discovery.
+                </p>
+              </div>
               <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
                 <button
                   onClick={(e) => {
@@ -84,30 +90,6 @@ const Home: NextPage = () => {
                 >
                   <div className="text-lg">Start</div>
                 </button>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  rutrum velit id lacus imperdiet suscipit. Fusce a mi mauris.
-                  Donec tempor mi augue, elementum suscipit tortor elementum
-                  fermentum. Integer id rhoncus diam. Sed pulvinar elit at felis
-                  vestibulum, non sodales turpis scelerisque. Class aptent
-                  taciti sociosqu ad litora torquent per conubia nostra, per
-                  inceptos himenaeos. Etiam imperdiet feugiat tortor, non
-                  sodales felis venenatis sit amet. Aliquam quam ligula, lacinia
-                  sed ultrices ut, cursus non augue. Sed ac condimentum lectus,
-                  eget interdum nisi.
-                </p>
-
-                <p>
-                  Quisque quis erat a tellus ullamcorper ullamcorper. Donec
-                  sapien nunc, faucibus vitae ornare in, sodales sit amet
-                  tortor. Sed justo risus, rhoncus sed nisi non, imperdiet
-                  tristique nibh. Morbi eget orci dolor. In hac habitasse platea
-                  dictumst. Nunc ac massa semper turpis ornare commodo id
-                  ultricies ipsum. Mauris rhoncus mi risus, non viverra turpis
-                  euismod non.
-                </p>
               </div>
             </>
           )}
