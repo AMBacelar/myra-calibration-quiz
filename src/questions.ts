@@ -607,16 +607,6 @@ export const questions: Question[] = [
           [Categories.NEUROTICISM]: undefined,
         },
       },
-      {
-        text: "interesting answer",
-        payload: {
-          [Categories.EXTRAVERSION]: undefined,
-          [Categories.AGREEABLENESS]: 2,
-          [Categories.OPENNESS]: undefined,
-          [Categories.CONSCIENTIOUSNESS]: 6,
-          [Categories.NEUROTICISM]: undefined,
-        },
-      },
     ],
     showNotSure: true,
     showNotSureScore: {
@@ -663,16 +653,6 @@ export const questions: Question[] = [
           [Categories.AGREEABLENESS]: undefined,
           [Categories.OPENNESS]: undefined,
           [Categories.CONSCIENTIOUSNESS]: 7,
-          [Categories.NEUROTICISM]: undefined,
-        },
-      },
-      {
-        text: "interesting answer",
-        payload: {
-          [Categories.EXTRAVERSION]: undefined,
-          [Categories.AGREEABLENESS]: 2,
-          [Categories.OPENNESS]: undefined,
-          [Categories.CONSCIENTIOUSNESS]: 6,
           [Categories.NEUROTICISM]: undefined,
         },
       },
@@ -725,16 +705,6 @@ export const questions: Question[] = [
           [Categories.NEUROTICISM]: undefined,
         },
       },
-      {
-        text: "interesting answer",
-        payload: {
-          [Categories.EXTRAVERSION]: undefined,
-          [Categories.AGREEABLENESS]: 2,
-          [Categories.OPENNESS]: undefined,
-          [Categories.CONSCIENTIOUSNESS]: 6,
-          [Categories.NEUROTICISM]: undefined,
-        },
-      },
     ],
     showNotSure: true,
     showNotSureScore: {
@@ -781,16 +751,6 @@ export const questions: Question[] = [
           [Categories.AGREEABLENESS]: undefined,
           [Categories.OPENNESS]: undefined,
           [Categories.CONSCIENTIOUSNESS]: 7,
-          [Categories.NEUROTICISM]: undefined,
-        },
-      },
-      {
-        text: "interesting answer",
-        payload: {
-          [Categories.EXTRAVERSION]: undefined,
-          [Categories.AGREEABLENESS]: 2,
-          [Categories.OPENNESS]: undefined,
-          [Categories.CONSCIENTIOUSNESS]: 6,
           [Categories.NEUROTICISM]: undefined,
         },
       },

@@ -115,7 +115,6 @@ const Home: NextPage = () => {
                       ...result,
                       country: e.target.value,
                     }));
-                    setStage((stage) => stage + 1);
                   }}
                   className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-black dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
                 >
@@ -340,6 +339,9 @@ const Home: NextPage = () => {
                     <option value="ZW">Zimbabwe</option>
                   </optgroup>
                 </select>
+                <button onClick={() => setStage((stage) => stage + 1)}>
+                  Confirm
+                </button>
               </div>
             </>
           )}
@@ -387,13 +389,14 @@ const Home: NextPage = () => {
                 />
                 <button
                   className="border border-solid border-black p-4"
+                  disabled={name.length === 0}
                   onClick={(e) => {
                     e.preventDefault();
                     setResult((result) => ({ ...result, name }));
                     setStage((stage) => stage + 1);
                   }}
                 >
-                  Go!
+                  Next!
                 </button>
               </div>
             </>
@@ -423,13 +426,14 @@ const Home: NextPage = () => {
                 />
                 <button
                   className="border border-solid border-black p-4"
+                  disabled={email.length === 0}
                   onClick={(e) => {
                     e.preventDefault();
                     setResult((result) => ({ ...result, email }));
                     setStage((stage) => stage + 1);
                   }}
                 >
-                  Go!
+                  Next!
                 </button>
               </div>
             </>
