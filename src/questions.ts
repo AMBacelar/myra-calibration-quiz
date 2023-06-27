@@ -766,7 +766,7 @@ export const questions: Question[] = [
   },
 
   {
-    text: "1 Michael ________ was born 1958.",
+    text: "Michael ________ was born 1958.",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -784,7 +784,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Jordan",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -794,7 +794,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Jackson",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
