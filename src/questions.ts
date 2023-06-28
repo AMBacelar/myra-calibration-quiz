@@ -766,7 +766,7 @@ export const questions: Question[] = [
   },
 
   {
-    text: "Michael ________ was born 1958.",
+    text: "Michael ___ was born 1958.",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -814,7 +814,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "2 Michael ________ was born 1958.",
+    text: "We ___ how far you have come.",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -832,7 +832,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Appreciate",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -842,7 +842,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Respect",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
@@ -862,7 +862,7 @@ export const questions: Question[] = [
     },
   },
   {
-    text: "3 Michael ________ was born 1958.",
+    text: "Mankind is the ___ of all its misfortune.",
     direction: "column",
     minimumScoresRequiredToDisplayQuestion: {
       [Categories.EXTRAVERSION]: undefined,
@@ -880,7 +880,7 @@ export const questions: Question[] = [
     },
     options: [
       {
-        text: "good answer",
+        text: "Root",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: 10,
@@ -890,7 +890,7 @@ export const questions: Question[] = [
         },
       },
       {
-        text: "okay answer",
+        text: "Sum",
         payload: {
           [Categories.EXTRAVERSION]: undefined,
           [Categories.AGREEABLENESS]: undefined,
