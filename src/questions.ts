@@ -31,7 +31,7 @@ export const initialQuestions: AlternativeQuestion[] = [
   },
   {
     key: "better_memory",
-    text: "Do you want to improve your memory to better recall important traditions and practices?",
+    text: "Improve your memory recall for traditions and practices?",
     direction: "row",
     options: [
       { text: "Yes", key: "yes" },
@@ -48,7 +48,7 @@ export const initialQuestions: AlternativeQuestion[] = [
   },
   {
     key: "improve_focus",
-    text: "Do you want to improve your ability to focus to better appreciate cultural nuances in art and literature?",
+    text: "Improve your ability to appreciate cultural nuances?",
     direction: "row",
     options: [
       { text: "Yes", key: "yes" },
@@ -65,7 +65,7 @@ export const initialQuestions: AlternativeQuestion[] = [
   },
   {
     key: "problem_solving",
-    text: "Do you want to improve your problem-solving abilities to better navigate cross-cultural dialogue?",
+    text: "Improve your ability to navigate cross-cultural dialogue?",
     direction: "row",
     options: [
       { text: "Yes", key: "yes" },
@@ -82,7 +82,7 @@ export const initialQuestions: AlternativeQuestion[] = [
   },
   {
     key: "planning_organising",
-    text: "Would you like to improve your planning and organising skills to better engage in cultural experiences and events?",
+    text: "Improve your engagement in cultural experiences and events?",
     direction: "row",
     options: [
       { text: "Yes", key: "yes" },
@@ -99,7 +99,7 @@ export const initialQuestions: AlternativeQuestion[] = [
   },
   {
     key: "improve_creativity",
-    text: "Do you want to improve your creativity to better appreciate and engage with diverse expressions and contribute to building a more inclusive society?",
+    text: "Improve your engagement within a more inclusive society?",
     direction: "row",
     options: [
       { text: "Yes", key: "yes" },
@@ -126,7 +126,7 @@ export const finalQuestions: AlternativeQuestion[] = [
       { text: "Asian or Asian Pacific", key: "asian" },
       { text: "Black, Caribbean or African", key: "black" },
       { text: "Mixed or multiple ethnic groups", key: "mixed" },
-      { text: "White", key: "white" },
+      { text: "White, English or British", key: "white" },
     ],
     showNotSure: true,
     showNotSureScore: {
