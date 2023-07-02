@@ -12,7 +12,7 @@ export type AlternativeQuestion = ShowNotSureWrapper & {
 export const initialQuestions: AlternativeQuestion[] = [
   {
     key: "primary_goal",
-    text: "What's your Primary Goal?",
+    text: "What is your Primary Goal?",
     direction: "column",
     options: [
       { text: "Learn more about my culture", key: "learn_culture" },
@@ -99,7 +99,7 @@ export const initialQuestions: AlternativeQuestion[] = [
   },
   {
     key: "improve_creativity",
-    text: "Improve your engagement within a more inclusive society?",
+    text: "Improve your outlook on a more inclusive society?",
     direction: "row",
     options: [
       { text: "Yes", key: "yes" },
@@ -119,7 +119,7 @@ export const initialQuestions: AlternativeQuestion[] = [
 export const finalQuestions: AlternativeQuestion[] = [
   {
     key: "ethnicity",
-    text: "What is your Ethnicity?",
+    text: "What is your ethnicity?",
     direction: "column",
     options: [
       { text: "Arab, Middle East or North African", key: "arab" },
