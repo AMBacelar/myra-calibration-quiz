@@ -75,9 +75,7 @@ const Home: NextPage = () => {
               </h2>
               <div>
                 <p>
-                  Discover your true self and embrace diverse perspectives. Step
-                  into a world of empathy and culture, as you embark on a
-                  transformative journey of self-discovery.
+                Harness the Power of your cultural awareness and self-discovery.
                 </p>
               </div>
               <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
@@ -122,7 +120,7 @@ const Home: NextPage = () => {
                   <option value="UE">United Arab Emirates</option>
                   <option value="UK">United Kingdom</option>
                   <option value="US">United States</option>
-                  <optgroup label="Rest of countries">
+                  <optgroup label="-">
                     <option value="DZ">Algeria</option>
                     <option value="AD">Andorra</option>
                     <option value="AO">Angola</option>
@@ -396,7 +394,7 @@ const Home: NextPage = () => {
                     setStage((stage) => stage + 1);
                   }}
                 >
-                  Next!
+                  Next
                 </button>
               </div>
             </>
@@ -433,7 +431,7 @@ const Home: NextPage = () => {
                     setStage((stage) => stage + 1);
                   }}
                 >
-                  Next!
+                  Next
                 </button>
               </div>
             </>
