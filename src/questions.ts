@@ -206,7 +206,7 @@ export const questions: Question[] = [
         },
       },
     ],
-    showNotSure: true,
+    showNotSure: false,
     showNotSureScore: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
@@ -264,7 +264,7 @@ export const questions: Question[] = [
         },
       },
     ],
-    showNotSure: true,
+    showNotSure: false,
     showNotSureScore: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
@@ -322,7 +322,7 @@ export const questions: Question[] = [
         },
       },
     ],
-    showNotSure: true,
+    showNotSure: false,
     showNotSureScore: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
@@ -608,7 +608,7 @@ export const questions: Question[] = [
         },
       },
     ],
-    showNotSure: true,
+    showNotSure: false,
     showNotSureScore: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
@@ -657,7 +657,7 @@ export const questions: Question[] = [
         },
       },
     ],
-    showNotSure: true,
+    showNotSure: false,
     showNotSureScore: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
@@ -706,7 +706,7 @@ export const questions: Question[] = [
         },
       },
     ],
-    showNotSure: true,
+    showNotSure: false,
     showNotSureScore: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
@@ -755,7 +755,7 @@ export const questions: Question[] = [
         },
       },
     ],
-    showNotSure: true,
+    showNotSure: false,
     showNotSureScore: {
       [Categories.EXTRAVERSION]: undefined,
       [Categories.AGREEABLENESS]: undefined,
