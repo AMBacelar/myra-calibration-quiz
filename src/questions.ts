@@ -125,8 +125,8 @@ export const finalQuestions: AlternativeQuestion[] = [
       { text: "Arab, Middle East or North African", key: "arab" },
       { text: "Asian or Asian Pacific", key: "asian" },
       { text: "Black, Caribbean or African", key: "black" },
-      { text: "Mixed or multiple ethnic groups", key: "mixed" },
-      { text: "White, English or British", key: "white" },
+      { text: "Mixed or Multiple ethnic groups", key: "mixed" },
+      { text: "White, Caucasian or European groups", key: "white" },
     ],
     showNotSure: true,
     showNotSureScore: {
