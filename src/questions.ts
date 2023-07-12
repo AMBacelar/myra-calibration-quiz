@@ -207,13 +207,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-    showNotSureScore: {
-      [Categories.EXTRAVERSION]: undefined,
-      [Categories.AGREEABLENESS]: undefined,
-      [Categories.OPENNESS]: undefined,
-      [Categories.CONSCIENTIOUSNESS]: undefined,
-      [Categories.NEUROTICISM]: undefined,
-    },
   },
   {
     text: "Pick where you would live",
@@ -265,13 +258,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-    showNotSureScore: {
-      [Categories.EXTRAVERSION]: undefined,
-      [Categories.AGREEABLENESS]: undefined,
-      [Categories.OPENNESS]: undefined,
-      [Categories.CONSCIENTIOUSNESS]: undefined,
-      [Categories.NEUROTICISM]: undefined,
-    },
   },
   {
     text: "Pick One",
@@ -323,13 +309,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-    showNotSureScore: {
-      [Categories.EXTRAVERSION]: undefined,
-      [Categories.AGREEABLENESS]: undefined,
-      [Categories.OPENNESS]: undefined,
-      [Categories.CONSCIENTIOUSNESS]: undefined,
-      [Categories.NEUROTICISM]: undefined,
-    },
   },
   {
     text: "Name the Flag?",
@@ -609,13 +588,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-    showNotSureScore: {
-      [Categories.EXTRAVERSION]: undefined,
-      [Categories.AGREEABLENESS]: undefined,
-      [Categories.OPENNESS]: undefined,
-      [Categories.CONSCIENTIOUSNESS]: undefined,
-      [Categories.NEUROTICISM]: undefined,
-    },
   },
   {
     text: "Who said",
@@ -658,13 +630,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-    showNotSureScore: {
-      [Categories.EXTRAVERSION]: undefined,
-      [Categories.AGREEABLENESS]: undefined,
-      [Categories.OPENNESS]: undefined,
-      [Categories.CONSCIENTIOUSNESS]: undefined,
-      [Categories.NEUROTICISM]: undefined,
-    },
   },
   {
     text: "Who said",
@@ -707,13 +672,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-    showNotSureScore: {
-      [Categories.EXTRAVERSION]: undefined,
-      [Categories.AGREEABLENESS]: undefined,
-      [Categories.OPENNESS]: undefined,
-      [Categories.CONSCIENTIOUSNESS]: undefined,
-      [Categories.NEUROTICISM]: undefined,
-    },
   },
   {
     text: "Who said",
@@ -756,13 +714,6 @@ export const questions: Question[] = [
       },
     ],
     showNotSure: false,
-    showNotSureScore: {
-      [Categories.EXTRAVERSION]: undefined,
-      [Categories.AGREEABLENESS]: undefined,
-      [Categories.OPENNESS]: undefined,
-      [Categories.CONSCIENTIOUSNESS]: undefined,
-      [Categories.NEUROTICISM]: undefined,
-    },
   },
 
   {
