@@ -4,6 +4,12 @@ import {
   Legend,
   RadialBarChart,
   RadialBar,
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Tooltip,
+  XAxis,
+  YAxis,
 } from "recharts";
 import { type ActiveScore, Categories } from "~/helpers";
 
@@ -40,32 +46,29 @@ export const Results = ({ data }: { data: ActiveScore }) => {
   return (
     <div
       style={{
-        width: 600,
-        height: 400,
+        width: 700,
+        height: 500,
       }}
     >
       <ResponsiveContainer width="100%" height="100%">
-        <RadialBarChart
-          cx="50%"
-          cy="50%"
-          innerRadius="30%"
-          outerRadius="80%"
-          barSize={20}
+        <BarChart
+          width={500}
+          height={300}
           data={results}
+          layout="vertical"
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
         >
-          <RadialBar
-            label={{ position: "insideStart", fill: "#fff" }}
-            background
-            dataKey="value"
-          />
-          <Legend
-            iconSize={10}
-            width={200}
-            height={140}
-            verticalAlign="middle"
-            align="left"
-          />
-        </RadialBarChart>
+          <CartesianGrid strokeDasharray="3 3" />
+          <YAxis type="category" dataKey="name" />
+          <XAxis type="number" dataKey="value" />
+          <Tooltip />
+          <Bar dataKey="value" />
+        </BarChart>
       </ResponsiveContainer>
     </div>
   );
