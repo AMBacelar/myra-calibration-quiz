@@ -7,6 +7,9 @@ import { useEffect, useState } from "react";
 import { Results } from "~/components/Results";
 import { type ActiveScore, Categories } from "~/helpers";
 
+const totalQuestions = [...initialQuestions, ...questions, ...finalQuestions]
+  .length;
+
 const Home: NextPage = () => {
   const [stage, setStage] = useState(-1);
   const [result, setResult] = useState<
@@ -35,6 +38,9 @@ const Home: NextPage = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
 
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [progress, setProgress] = useState<number>(0);
+
   const handleSubmit = () => {
     const body = JSON.stringify(result);
     void fetch("/api/post-results", {
@@ -56,6 +62,11 @@ const Home: NextPage = () => {
     }
   }, [result]);
 
+  useEffect(() => {
+    const percent = (currentIndex / totalQuestions) * 100;
+    setProgress(percent);
+  }, [currentIndex]);
+
   return (
     <>
       <Head>
@@ -65,6 +76,12 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center text-black">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+          <div className="h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+            <div
+              className="h-2.5 rounded-full bg-gray-600 dark:bg-gray-300"
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
           <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
             Myra <span className="text-[hsl(280,100%,70%)]">MPQ</span>s
           </h1>
@@ -75,7 +92,8 @@ const Home: NextPage = () => {
               </h2>
               <div>
                 <p>
-                Harness the Power of your cultural awareness and self-discovery.
+                  Harness the Power of your cultural awareness and
+                  self-discovery.
                 </p>
               </div>
               <div className="flex-col gap-4 sm:grid-cols-2 md:gap-8">
@@ -95,6 +113,7 @@ const Home: NextPage = () => {
             <AlternativeQuestions
               questions={initialQuestions}
               currentResult={result}
+              onScoreChange={() => setCurrentIndex((curr) => curr + 1)}
               onLastQuestionAnswered={(result) => {
                 setResult(result);
                 setStage((stage) => stage + 1);
@@ -365,6 +384,7 @@ const Home: NextPage = () => {
           {stage === 3 && (
             <QuestionSection
               questions={questions}
+              onScoreChange={() => setCurrentIndex((curr) => curr + 1)}
               onLastQuestionAnswered={(score) => {
                 setQuizScore(score);
                 setResult((result) => ({ ...result, score }));
@@ -403,6 +423,7 @@ const Home: NextPage = () => {
             <AlternativeQuestions
               questions={finalQuestions}
               currentResult={result}
+              onScoreChange={() => setCurrentIndex((curr) => curr + 1)}
               onLastQuestionAnswered={(result) => {
                 setResult(result);
                 setStage((stage) => stage + 1);

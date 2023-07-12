@@ -5,8 +5,9 @@ import { type AlternativeQuestion } from "~/questions";
 export const AlternativeQuestions: FunctionComponent<{
   questions: AlternativeQuestion[];
   onLastQuestionAnswered: (result: object) => void;
+  onScoreChange: () => void;
   currentResult: object;
-}> = ({ questions, onLastQuestionAnswered, currentResult }) => {
+}> = ({ questions, onLastQuestionAnswered, currentResult, onScoreChange }) => {
   const [result, setResult] = useState(currentResult);
   const [questionIndex, setQuestionIndex] = useState<number>(-1);
   const [question, setQuestion] = useState<AlternativeQuestion>();
@@ -28,6 +29,7 @@ export const AlternativeQuestions: FunctionComponent<{
 
   useEffect(() => {
     callGetNextQuestion();
+    onScoreChange();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [result]);
 

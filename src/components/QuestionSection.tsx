@@ -11,7 +11,8 @@ import {
 export const QuestionSection: FunctionComponent<{
   questions: Question[];
   onLastQuestionAnswered: (score: ActiveScore) => void;
-}> = ({ questions, onLastQuestionAnswered }) => {
+  onScoreChange: () => void;
+}> = ({ questions, onLastQuestionAnswered, onScoreChange }) => {
   const [score, setScore] = useState<ActiveScore>(initialScore);
   const [questionIndex, setQuestionIndex] = useState<number>(-1);
   const [question, setQuestion] = useState<Question>();
@@ -44,6 +45,7 @@ export const QuestionSection: FunctionComponent<{
 
   useEffect(() => {
     callGetNextQuestion();
+    onScoreChange();
   }, [score]);
 
   if (!question) {
